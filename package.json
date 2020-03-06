@@ -14,9 +14,9 @@
     "get-pixels": "^3.3.0",
     "mocha-multi": "^1.0.1",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4",
-    "webpack": "^3.11.0"
+    "react-dom": "^16.13.0",
+    "react-scripts": "^3.4.0",
+    "webpack": "^4.42.0"
   },
   "scripts": {
     "start": "react-scripts start",
