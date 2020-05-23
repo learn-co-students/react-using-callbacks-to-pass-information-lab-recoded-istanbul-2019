@@ -2,15 +2,22 @@ import React, { Component } from 'react';
 import learnSymbol from './data.js'
 import Cell from './Cell.js'
 import ColorSelector from './ColorSelector.js'
-
+let holder;
 export default class Matrix extends Component {
 
-  constructor() {
-    super()
+  constructor(props) {
+    super(props);
+    this.state = {
+      color: ''
+    }
   }
-
+  updateState = (selectedBackground) => (
+    this.setState({
+      color: selectedBackground
+    })
+  )
   genRow = (vals) => (
-    vals.map((val, idx) => <Cell key={idx} color={val} />)
+    vals.map((val, idx) => <Cell key={idx} color={val} clickedColor={this.state.color} onClick={this.updateState} />)
   )
 
   genMatrix = () => (
@@ -18,9 +25,10 @@ export default class Matrix extends Component {
   )
 
   render() {
+
     return (
       <div id="app">
-        <ColorSelector />
+        <ColorSelector updateKey={this.updateState} />
         <div id="matrix">
           {this.genMatrix()}
         </div>
