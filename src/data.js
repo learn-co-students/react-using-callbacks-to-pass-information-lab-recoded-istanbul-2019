@@ -382,4 +382,3 @@ var learnSymbol = [
   ]
 ]
 export default learnSymbol
-
