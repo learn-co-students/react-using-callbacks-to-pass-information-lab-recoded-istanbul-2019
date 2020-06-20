@@ -14,9 +14,9 @@
     "get-pixels": "^3.3.0",
     "mocha-multi": "^1.0.1",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4",
-    "webpack": "^3.11.0"
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1",
+    "webpack": "^4.43.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -33,7 +33,7 @@
     "chai": "^4.1.2",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "mocha": "^5.2.0",
+    "mocha": "^8.0.1",
     "sinon": "^6.1.0"
   }
 }
